@@ -1,0 +1,182 @@
+document.getElementById('searchform').addEventListener('submit', function (e) {
+   e.preventDefault();
+        aResult = (document.getElementById('artist').value)
+        tResult = (document.getElementById('track').value);
+        console.log(aResult, tResult);
+}, false);
+
+var aResult = "";
+var tResult = "";
+console.log(aResult, tResult);
+
+
+document.getElementById("Results").onclick = function() {goResults() };
+function goResults() {
+
+// var LastfmAPI = require('lastfmapi');
+
+var cache = new LastFMCache();
+
+var lastfm = new LastFM({
+    apiKey : '70cee47d1aecc2d367a6d8cbfbd10631',
+    apiSecret : '4572becf9ca21a83f4abe76339dfcc8f',
+    cache : cache,
+});
+
+lastfm.track.getSimilar({
+	artist : aResult,
+	track : tResult,
+	limit : '3',
+	autocorrect : '1'}, {success: function(data){
+    console.log(data);
+var resultOneArray = [];
+          for(var i in data.similartracks.track){
+              resultOneArray.push({ trackName: data.similartracks.track[i].name, 
+              artistName: data.similartracks.track[i].artist.name });
+          };
+          console.log(resultOneArray[0]);
+var resultTwoArray = [];
+          for(var i in data.similartracks.track){
+              resultTwoArray.push({ trackName: data.similartracks.track[i].name, 
+              artistName: data.similartracks.track[i].artist.name });
+          };
+          console.log(resultTwoArray[1]);
+var resultThreeArray = [];
+          for(var i in data.similartracks.track){
+              resultThreeArray.push({ trackName: data.similartracks.track[i].name, 
+              artistName: data.similartracks.track[i].artist.name });
+          };
+          console.log(resultThreeArray[2]);
+	}, error: function(code, message){
+    console.log("Error: ");
+}});}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//LIMIT
+
+//ORIGINAL FUNCTION
+// lastfm.artist.getInfo({
+// 	artist: 'The xx'}, {success: function(data){
+//     console.log("Success: " + data.similiartracks);
+// }, error: function(code, message){
+//     console.log("Error: ");
+// }});}
+
+
+// ORIGINAL FUNCTION WITH TRACK SIMILAR APPLIED IN THE FORMAT OF THE OLD ONE
+// lastfm.track.getSimilar({
+// 	artist : 'The xx',
+// 	track : 'Islands',
+// 	limit : '3'}, function (err, track) {
+// 	if (err) { throw err; }
+// 	console.log(track);
+// });
+// }
+
+
+// OLD FUNCTION IN OTHER FORMAT
+// lfm.track.getSimilar({
+// 	'artist' : 'The Rives',
+// 	'track' : 'I Want More',
+// 	'limit' : '3',
+// 	'autocorrect' : '1'
+// }, function (err, track) {
+// 	if (err) { throw err; }
+// 	console.log(track);
+// });
+
+
+// var trackStream = lastfm.stream('username');
+
+// trackStream.on('lastPlayed', function(track) {
+//   console.log('Last played: ' + track.name);
+// });
+
+// trackStream.on('nowPlaying', function(track) {
+//   console.log('Now playing: ' + track.name);
+// });
+
+// trackStream.on('scrobbled', function(track) {
+//   console.log('Scrobbled: ' + track.name);
+// });
+
+// trackStream.on('stoppedPlaying', function(track) {
+//   console.log('Stopped playing: ' + track.name);
+// });
+
+// trackStream.on('error', function(error) {
+//   console.log('Error: '  + error.message);
+// });
+
+// trackStream.start();
+
+// var session = lastfm.session({
+//    token: token,
+//    handlers: {
+//       success: function(session) {
+//          lastfm.update('nowplaying', session, { track: track } );
+//          lastfm.update('scrobble', session, { track: track, timestamp: 12345678 });
+//       }
+//    }
+// });
+
+// var request = lastfm.request("artist.getInfo", {
+//     artist: "The Mae Shi",
+//     handlers: {
+//         success: function(data) {
+//             console.log("Success: " + data);
+//         },
+//         error: function(error) {
+//             console.log("Error: " + error.message);
+//         }
+//     }
+// });
+// }
+
+
+
+//     $.ajax({
+//       url: 'http://ws.audioscrobbler.com/2.0/?method=artist.getinfo&artist=Cher&api_key=2b35547bd5675d8ecb2b911ee9901f59&format=json',
+//       success: function(data) {
+//         alert(data.artist.name);
+      
+
+//       }
+//     })
+
+// var track.getSimilar({
+//     $.ajax({
+//         url: 'http://ws.audioscrobbler.com/2.0/',
+
+    
+// });

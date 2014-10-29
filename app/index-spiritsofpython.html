@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back To Your Roots</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/spiritspython.css" rel="stylesheet">
+    <script src="js/respond.min.js"></script>
+    <script type="text/javascript" src="../bower_components/lastfm-api/src/lastfm.api.md5.js"></script>
+    <script type="text/javascript" src="../bower_components/lastfm-api/src/lastfm.api.js"></script>
+    <script type="text/javascript" src="../bower_components/lastfm-api/src/lastfm.api.cache.js"></script>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- ***THIS VERSION - REMOVED 'INTRO' DIV COPY & 'ABOUT' DIV - NOW ONLY TWO DIVS + DIV ROWS***
+        ===============================================================================-->
+        <!-- row 1 *** Intro div with Music Tree html form ***
+        ======================================================-->
+         <div id="intro">
+            <div class="row">
+                <div class="col-lg-12 col-sm-6">
+                    <div class="span6 center">
+                                <body>
+
+                                    <h1> Roots </h1>
+                                    <p> Input an artist and a track to start diggin' on your music's roots.</p> 
+                                    
+                                    <form id="searchform">
+
+                                    <label> Artist: </label>
+                                    <input id="artist" type="text"  placeholder="Artist or Band" value=""/>
+
+                                    <label> Track: </label>                              
+                                    <input id="track" type="text" placeholder="Song name" value=""/>
+                                
+                                    <input type="submit" id="search" class="btn-default" value="GO!"/>
+
+                                    </form>
+
+                                </body>
+                    </div> <!-- div span6 center-->  
+                </div> <!-- div class col -->
+            </div> <!-- div class row-->
+        </div> <!-- div Intro.-->
+        <!-- row 2 *** About div back in - short explanation of Music Tree ***
+        ======================================================-->
+        <div id="about">
+            <div class="row">
+                <div class="col-lg-12 col-sm-6">
+                    <div class="span8 center">
+                        <h2>The more you dig, the more you find. Happy listening.</h2> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="about">
+            <div class="row">
+                <div class="col-lg-12 col-sm-6">
+                    <div class="span8 center">
+                        <h2> </h2> 
+                    </div>
+                </div>
+            </div>
+        </div>        
+        <!-- row 3 *** Song results & Spotify Play Buttons ***
+        =====================================================-->
+        <div id="result">
+                <!-- ATTEMPT TO CENTRE WITH 'RESPONSIVE UTILITIES' FAQ DIDN'T WORK 
+                <div class="center-block"> -->
+                    <iframe src="https://embed.spotify.com/?uri=spotify:track:6JEK0CvvjDjjMUBFoXShNZ" width="300" height="380" frameborder="0" allowtransparency="true" class="col-lg-4" id="object"></iframe>
+
+            	    <iframe src="https://embed.spotify.com/?uri=spotify:track:6JEK0CvvjDjjMUBFoXShNZ" width="300" height="380" frameborder="0" allowtransparency="true" class="col-lg-4" id="objecttwo"></iframe>
+
+                    <iframe src="https://embed.spotify.com/?uri=spotify:track:6JEK0CvvjDjjMUBFoXShNZ" width="300" height="380" frameborder="0" allowtransparency="true" class="col-lg-4" id="objecttwo"></iframe>
+                <!-- </div> 'RESPONSIVE UTILITIES' attempt -->
+        </div> <!-- *** div id present -->
+        <!-- row 4 *** New buttons ***
+        ==============================-->
+        <div id="buttons">
+                    <article class="col-lg-2 col-lg-offset-1">
+                    <p><span><button type="button" id="Result1search" class="btn btn-default">Dig this result</button></span></p>
+                    </article>
+                    <article class="col-lg-2 col-lg-offset-2">
+                    <p><span><button type="button" id="Result2search" class="btn btn-default">Dig this result</button></span></p>
+                    </article>
+                    <article class="col-lg-2 col-lg-offset-2">
+                    <p><span><button type="button" id="Result3search" class="btn btn-default">Dig this result</button></span></p>
+                    </article>
+        </div> <!-- CLOSE new buttons-->
+        <!-- row 5 *** footer
+        =====================-->
+    </div><!--close container>-->
+
+        <footer class="row" id="footerpythons">
+             <p>Back To Your Roots is powered by <a href="http://www.lastfm.se/api">last.fm</a> and <a href="https://developer.spotify.com/web-api/"</a> Spotify.</p>
+        	 <p><a href="http://www.freepik.com/free-vector/free-modern-geometric-template_716665.htm">Graphic designed by Freepik</a></p>
+             <p><a href="index-meetthepythons.html">Check out the team behind Music Tree</a></p>
+        </footer>
+
+    
+<!-- javascript -->
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+ <script type="text/javascript" src="../bower_components/spotify-web-api-js/src/spotify-web-api.js"></script>
+ <script src="scripts/main111python.js" type="text/javascript"></script>
+</html>

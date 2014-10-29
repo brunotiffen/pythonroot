@@ -1,0 +1,73 @@
+/*This is my custom stylesheet*/
+#intro {
+	min-height: 200px;
+	height:auto;
+	padding-top: 2em;
+	/*text-align: right;
+	color: #660099;*/
+	/*font-family: Helvetica Neue;*/
+    /*text-shadow: #CCCCFF 0.3em 0.3em 0.3em;*/
+}
+ /*HTML FORM*/
+ .center {
+    text-align:center;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+.center form {
+    display:inline-block;
+}
+#search {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-family: Helvetica Neue, Arial, sans-serif;
+}
+/*#Results {
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-family: Helvetica Neue, Arial, sans-serif;*/
+}
+#about .center {
+	text-align:center;
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+/*Spotify Play buttons*/
+#results {
+	min-height: 400px;
+	height:auto;
+	padding-top: 2em;
+}
+#object {
+	padding-left: 4em;
+	display: inline-block;
+}
+#objecttwo {
+	padding-left: 3em;
+	display: inline-block;
+}
+#objectthree {
+	padding-left: 2em;
+	display: inline-block;
+}
+span {
+	padding-left: 8em;
+}
+footer {
+	padding: 3em 0;
+	margin: 4em 0;
+	text-align: center;
+	color: #660099;
+	text-shadow: #CCCCFF 0.3em 0.3em 0.3em;
+	font-weight: bold;
+	font-family: Helvetica Neue, Arial, sans-serif;
+}
+/*Increased padding from 2, margin from 3*/
+#footerpythons {
+	min-height: 150px;
+	height:auto;
+}
+body {
+	background-image: url(../img/pythons.abs.bg.2.jpg);
+	background-repeat: no-repeat;
+}

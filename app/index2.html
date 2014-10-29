@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+
+   <title>teste</title>
+
+   <style>
+   #result{
+   width:910px;
+   height:310px;
+   background-color: grey;
+   }
+   </style>
+
+   <style>
+   #buttons{
+   width:910px;
+   height:30px;
+   background-color: black;
+   }
+   </style>
+
+   <script type="text/javascript" src="../bower_components/lastfm-api/src/lastfm.api.md5.js"></script>
+   <script type="text/javascript" src="../bower_components/lastfm-api/src/lastfm.api.js"></script>
+   <script type="text/javascript" src="../bower_components/lastfm-api/src/lastfm.api.cache.js"></script>
+
+   <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+
+ </head>
+
+
+ <body>
+
+  <h1> Music Tree </h1>
+    <p> Please imput the song's info to get started </p>  
+
+     <form id="searchform">
+
+       <label> Artist: </label>
+       <input id="artist" type="text"  placeholder="Artist or Band" value=""/>
+
+       <label> Track: </label>
+       <input id="track" type="text" placeholder="Song name" value=""/>        
+      
+       <input type="submit" id="search" class="btn-primary" value="GO!"/>
+
+     </form>
+
+
+     <div id="result">
+      <iframe src="https://embed.spotify.com/?uri=spotify:track:6JEK0CvvjDjjMUBFoXShNZ" width="300" height="300" frameborder="0" allowtransparency="true"></iframe>
+      <iframe src="https://embed.spotify.com/?uri=spotify:track:6JEK0CvvjDjjMUBFoXShNZ" width="300" height="300" frameborder="0" allowtransparency="true"></iframe>
+      <iframe src="https://embed.spotify.com/?uri=spotify:track:6JEK0CvvjDjjMUBFoXShNZ" width="300" height="300" frameborder="0" allowtransparency="true"></iframe>
+     </div>
+
+     <div id="buttons">
+      <input type="button" id="Result1search" class="btn-primary" value="..........Go further on 1!........" />      
+      <input type="button" id="Result2search" class="btn-primary" value="..........Go further on 2!........" />
+      <input type="button" id="Result3search" class="btn-primary" value="..........Go further on 3!........" />
+     </div>
+
+ </body>
+ <script type="text/javascript" src="../bower_components/spotify-web-api-js/src/spotify-web-api.js"></script>
+ <script src="scripts/main111.js" type="text/javascript"></script>
+</html>

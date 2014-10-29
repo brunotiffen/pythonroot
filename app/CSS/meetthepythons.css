@@ -1,0 +1,35 @@
+.container {
+	background-image: url(../img/pythons.abs.bg.1.jpg);
+	background-repeat: no-repeat;
+	margin-right: 90px;
+	margin-left: 90px;
+}
+body {
+	background-color: #7d7d7d;
+	font-family: Helvetica Neue, Arial, sans-serif;
+}
+#Who {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 4em;
+}
+#Table {
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#About {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#MusicTree {
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 4em;
+}
+span {
+	color: #660099;
+}
